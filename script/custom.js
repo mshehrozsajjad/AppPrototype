@@ -20,6 +20,16 @@ function func1(element,kg,type){
     else if (type == 4)
       co4 = kg;
     $(".total").html((co1+co2+co3+co4+co5+co6+co7+co8).toFixed(2));
+
+    if(window.location.pathname.split("/").pop().includes("page1")) {
+      localStorage.setItem("totalDinner", $(".total").html());
+      console.log(localStorage.getItem("totalDinner"));
+    }
+    else if (window.location.pathname.split("/").pop().includes("page2")) {
+      localStorage.setItem("totalBreakfast", $(".total").html());
+      console.log(localStorage.getItem("totalBreakfast"));
+    }
+
 };
 function funcCon(element,kg,type){
     if($(element).hasClass('active')){
@@ -33,6 +43,15 @@ function funcCon(element,kg,type){
         co8 = 0;
       $(".total").html((co1+co2+co3+co4+co5+co6+co7+co8).toFixed(2));
 
+      if(window.location.pathname.split("/").pop().includes("page1")) {
+        localStorage.setItem("totalDinner", $(".total").html());
+        console.log(localStorage.getItem("totalDinner"));
+      }
+      else if (window.location.pathname.split("/").pop().includes("page2")) {
+        localStorage.setItem("totalBreakfast", $(".total").html());
+        console.log(localStorage.getItem("totalBreakfast"));
+      }
+
     }else{
       if(type == 1)
         co5 = kg;
@@ -43,6 +62,15 @@ function funcCon(element,kg,type){
       else if (type == 4)
         co8 = kg;
       $(".total").html((co1+co2+co3+co4+co5+co6+co7+co8).toFixed(2));
+
+      if(window.location.pathname.split("/").pop().includes("page1")) {
+        localStorage.setItem("totalDinner", $(".total").html());
+        console.log(localStorage.getItem("totalDinner"));
+      }
+      else if (window.location.pathname.split("/").pop().includes("page2")) {
+        localStorage.setItem("totalBreakfast", $(".total").html());
+        console.log(localStorage.getItem("totalBreakfast"));
+      }
 
 
 
@@ -83,6 +111,16 @@ function func2(element,kg,type){
   else if (type == 4)
     co4 = kg;
   $(".total").html((co1+co2+co3+co4+co5+co6+co7+co8).toFixed(2));
+
+  if(window.location.pathname.split("/").pop().includes("page1")) {
+    localStorage.setItem("totalDinner", $(".total").html());
+    console.log(localStorage.getItem("totalDinner"));
+  }
+  else if (window.location.pathname.split("/").pop().includes("page2")) {
+    localStorage.setItem("totalBreakfast", $(".total").html());
+    console.log(localStorage.getItem("totalBreakfast"));
+  }
+
 };
 
 function func3(element,kg,type){
@@ -97,6 +135,16 @@ function func3(element,kg,type){
   else if (type == 4)
     co4 = kg;
   $(".total").html((co1+co2+co3+co4+co5+co6+co7+co8).toFixed(2));
+
+  if(window.location.pathname.split("/").pop().includes("page1")) {
+    localStorage.setItem("totalDinner", $(".total").html());
+    console.log(localStorage.getItem("totalDinner"));
+  }
+  else if (window.location.pathname.split("/").pop().includes("page2")) {
+    localStorage.setItem("totalBreakfast", $(".total").html());
+    console.log(localStorage.getItem("totalBreakfast"));
+  }
+
 };
 function func4(element,kg,type){
     //Some code
@@ -110,4 +158,14 @@ function func4(element,kg,type){
     else if (type == 4)
       co4 = kg;
     $(".total").html((co1+co2+co3+co4+co5+co6+co7+co8).toFixed(2));
+
+    if(window.location.pathname.split("/").pop().includes("page1")) {
+      localStorage.setItem("totalDinner", $(".total").html());
+      console.log(localStorage.getItem("totalDinner"));
+    }
+    else if (window.location.pathname.split("/").pop().includes("page2")) {
+      localStorage.setItem("totalBreakfast", $(".total").html());
+      console.log(localStorage.getItem("totalBreakfast"));
+    }
+
 };
