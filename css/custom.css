@@ -10,13 +10,7 @@ body {
 	/*To hide the horizontal scroller appearing during the animation*/
 	/* overflow: hidden; */
 }
-body:before {
-  content: "";
-  position: absolute;
-  left: 0; right: 0;
-  top: 0; bottom: 0;
-  background: url('../img/bg-overlay.png');
-}
+
 
 #clouds{
 	padding: 100px 0;
@@ -142,7 +136,8 @@ Boarding Pass
 --------------------*/
 .boarding-pass {
   position: relative;
-  top: 50%;
+  top: 250px;
+  zoom: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 350px;
@@ -336,7 +331,7 @@ Boarding Pass
 }
 h1 ,h2,h3,h4,h5,h6{
   font-family:myFont;
-  font-weight: lighter;
+  /* font-weight: lighter; */
 }
 body{
   font-family:myFont;
